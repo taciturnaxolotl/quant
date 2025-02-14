@@ -20,21 +20,11 @@ This is the repo for my macropad! It was made for the [hackpad](https://hackpad.
 > [!WARNING]
 > This is a work in progress and is not yet ready for use. listen to the warning 💀 🏴‍☠️
 
-## Features
-
-- 3x3 macropad
-
-| Key | Function |
-| --- | --- |
-| K1 | Previous Media |
-| K2 | Play/Pause Media |
-| K3 | Next Media |
-| K4 | Mute |
-| K5 | Volume Down |
-| K6 | Volume Up |
-| K7 | Print Screen |
-| K8 | Ctrl + Print Screen (Print Window) |
-| K9 | Ctrl + Alt + Period (Open Emoji Keyboard) |
+| | Col 1 | Col 2 | Col 3 |
+| --- | --- | --- | --- |
+| **Row 1** | Previous Media | Play/Pause Media | Next Media |
+| **Row 2** | Mute | Volume Down | Volume Up |
+| **Row 3** | Print Screen | Ctrl + Print Screen (Print Window) | Ctrl + Alt + Period (Open Emoji Keyboard) |
 
 ## Fancy Screenshots
 
