@@ -37,7 +37,9 @@ Fresh off the buffer here are some screenshots of the pcb, schematic, and case!
 
 ### Case
 
-Coming soon!
+The case can be found at [this link](https://cad.onshape.com/documents/915d8a08680b6a58046d785c/w/3a505c41cf8d6fe4a9ae9373/e/5f5e5603c47ed25f33acaea0?renderMode=0&uiState=67aef3f3f5640914345c0fd7) in onshape!
+
+![case](https://raw.githubusercontent.com/taciturnaxolotl/quant/main/.github/images/cad.webp)
 
 ## Why that License?
 
