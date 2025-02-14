@@ -58,18 +58,9 @@ The case can be found at [this link](https://cad.onshape.com/documents/915d8a086
 
 ![case](https://raw.githubusercontent.com/taciturnaxolotl/quant/main/.github/images/cad.webp)
 
-## Why that License?
+## Why this License?
 
-Well I like using the AGPL 3.0 license because it's a strong copyleft license that ensures that any changes made to the code are shared back with the community. However there is often alot of confusion about how the license works. Here are 3 brief cases showing how the AGPL 3.0 license works:
-
-1. You download the binary from the releases or use a hosted version.
-    - You haven't done anything to the code so you are entirely in the clear!
-2. You see a problem with the code so you fork it and use it privately
-    - You are still in the clear! The AGPL 3.0 license only requires you to share the code if you distribute it.
-3. You find an improvement, implement it, and distribute it privately in your company or for some family and friends
-    - You are still in the clear! The AGPL 3.0 license only requires you to share the code if you distribute it to the public.
-
-Basically if you distribute the code publicaly you have to share the code, but if you don't distribute the code publicaly or don't modify it then you don't have to share the code.
+MIT because I have absolutely no reason to sell the rights to this and its pretty simple stuff lol.
 
 <p align="center">
 	<img src="https://raw.githubusercontent.com/taciturnaxolotl/carriage/main/.github/images/line-break.svg" />
@@ -80,5 +71,5 @@ Basically if you distribute the code publicaly you have to share the code, but i
 </p>
 
 <p align="center">
-	<a href="https://github.com/taciturnaxolotl/quant/blob/main/LICENSE.md"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=AGPL 3.0&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a>
+	<a href="https://github.com/taciturnaxolotl/quant/blob/main/LICENSE.md"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a>
 </p>
