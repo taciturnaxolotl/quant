@@ -27,8 +27,8 @@ Fresh off the buffer here are some screenshots of the pcb, schematic, and case!
 ### PCB
 
 <p>
-    <img src="https://raw.githubusercontent.com/taciturnaxolotl/quant/main/.github/images/front-traces.webp" alt="front traces" width=500/>
-    <img src="https://raw.githubusercontent.com/taciturnaxolotl/quant/main/.github/images/back-traces.webp" alt="back traces" width=500/>
+    <img src="https://raw.githubusercontent.com/taciturnaxolotl/quant/main/.github/images/front-traces.webp" alt="front traces" width="400"/>
+    <img src="https://raw.githubusercontent.com/taciturnaxolotl/quant/main/.github/images/back-traces.webp" alt="back traces" width="400"/>
 </p>
 
 ### Schematic
