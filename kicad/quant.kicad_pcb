@@ -1223,7 +1223,7 @@
 		(descr "3.5mm x 3.5mm PLCC4 Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf")
 		(tags "LED RGB NeoPixel Mini PLCC-4 3535")
 		(property "Reference" "D3"
-			(at 0 -2.75 360)
+			(at 0 -2.75 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "1c1e05d6-9850-4098-90c1-022d56836562")
@@ -1235,7 +1235,7 @@
 			)
 		)
 		(property "Value" "SK6812MINI"
-			(at 0 3.25 360)
+			(at 0 3.25 0)
 			(layer "F.Fab")
 			(uuid "91282b09-b166-44c4-b03d-c4e493bb7fea")
 			(effects
@@ -1441,7 +1441,7 @@
 			(uuid "ce21927e-9e88-4a2d-a03e-f61425c1029c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "8628b0f6-eb0c-461d-bb56-68dc0f721e23")
 			(effects
@@ -1506,7 +1506,7 @@
 		(descr "3.5mm x 3.5mm PLCC4 Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf")
 		(tags "LED RGB NeoPixel Mini PLCC-4 3535")
 		(property "Reference" "D2"
-			(at 0 -2.75 360)
+			(at 0 -2.75 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0bb7b9c6-c8e5-4f2c-b605-70ffe9f51548")
@@ -1518,7 +1518,7 @@
 			)
 		)
 		(property "Value" "SK6812MINI"
-			(at 0 3.25 360)
+			(at 0 3.25 0)
 			(layer "F.Fab")
 			(uuid "c51ccfd3-917d-4058-ad07-40eca166f07c")
 			(effects
@@ -1724,7 +1724,7 @@
 			(uuid "6a2ff501-9e54-4b44-bf36-48f303d36ca3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "cad89f27-a598-4f51-8634-2b18683946cf")
 			(effects
@@ -1789,7 +1789,7 @@
 		(descr "3.5mm x 3.5mm PLCC4 Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf")
 		(tags "LED RGB NeoPixel Mini PLCC-4 3535")
 		(property "Reference" "D5"
-			(at 0 -2.75 360)
+			(at 0 -2.75 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "b8e2e47d-c616-473d-acaa-a30b7ac0b6a2")
@@ -1801,7 +1801,7 @@
 			)
 		)
 		(property "Value" "SK6812MINI"
-			(at 0 3.25 360)
+			(at 0 3.25 0)
 			(layer "F.Fab")
 			(uuid "77bfc2df-668c-449f-bbb9-342bb8190123")
 			(effects
@@ -2007,7 +2007,7 @@
 			(uuid "8ffe4a28-3a80-484d-bed8-e056c8f85177")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "334db1fb-7889-4e90-8df7-0ae8651ec1ab")
 			(effects
@@ -4657,8 +4657,8 @@
 		(layer "Edge.Cuts")
 		(uuid "fff6c2a8-930d-43b2-aba2-c8d194f7f189")
 	)
-	(gr_text "the quant calculator"
-		(at 59.2 41 0)
+	(gr_text "the quant-pad"
+		(at 63.44 41.13 0)
 		(layer "F.SilkS")
 		(uuid "07e1041b-e96d-4270-8a99-66ab0d07438a")
 		(effects
