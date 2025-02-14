@@ -20,11 +20,22 @@ This is the repo for my macropad! It was made for the [hackpad](https://hackpad.
 > [!WARNING]
 > This is a work in progress and is not yet ready for use. listen to the warning 💀 🏴‍☠️
 
+### Keymap
+
 | | Col 1 | Col 2 | Col 3 |
 | --- | --- | --- | --- |
 | **Row 1** | Previous Media | Play/Pause Media | Next Media |
 | **Row 2** | Mute | Volume Down | Volume Up |
 | **Row 3** | Print Screen | Ctrl + Print Screen (Print Window) | Ctrl + Alt + Period (Open Emoji Keyboard) |
+
+### BOM
+
+| Part | Quantity | Description |
+| --- | --- | --- |
+| `XIAO-RP2040-DIP` | 1 | The microcontroller |
+| `Kailh Choc V2` | 9 | The switches |
+| `Kailh Choc V2 Keycaps` | 9 | The keycaps |
+| `SK6812 MINI-E LEDs` | 6 | The pretty blinken lights |
 
 ## Fancy Screenshots
 
