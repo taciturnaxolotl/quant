@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img src="https://raw.githubusercontent.com/taciturnaxolotl/quant/main/.github/images/quant.svg" width="200" alt="Logo"/><br/>
+    <img src="https://em-content.zobj.net/source/google/412/keycap-asterisk_2a-fe0f-20e3.png" width="200" alt="Logo"/><br/>
     <img src="https://raw.githubusercontent.com/taciturnaxolotl/carriage/main/.github/images/transparent.png" height="45" width="0px"/>
     <span>Quant</span>
     <img src="https://raw.githubusercontent.com/taciturnaxolotl/carriage/main/.github/images/transparent.png" height="30" width="0px"/>
