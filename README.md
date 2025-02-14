@@ -15,10 +15,26 @@
 
 ## What's this?
 
-This is the repo for my calculator macropad! It was made for the [hackpad](https://hackpad.hackclub.com/) ysws! It uses a `XIAO-RP2040-DIP` as the mcu and is currently very wip.
+This is the repo for my macropad! It was made for the [hackpad](https://hackpad.hackclub.com/) ysws! It uses a `XIAO-RP2040-DIP` as the mcu and is currently very wip.
 
 > [!WARNING]
 > This is a work in progress and is not yet ready for use. listen to the warning 💀 🏴‍☠️
+
+## Features
+
+- 3x3 macropad
+
+| Key | Function |
+| --- | --- |
+| K1 | Previous Media |
+| K2 | Play/Pause Media |
+| K3 | Next Media |
+| K4 | Mute |
+| K5 | Volume Down |
+| K6 | Volume Up |
+| K7 | Print Screen |
+| K8 | Ctrl + Print Screen (Print Window) |
+| K9 | Ctrl + Alt + Period (Open Emoji Keyboard) |
 
 ## Fancy Screenshots
 
