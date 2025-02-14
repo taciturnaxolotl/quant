@@ -20,6 +20,23 @@ This is the repo for my calculator macropad! It was made for the [hackpad](https
 > [!WARNING]
 > This is a work in progress and is not yet ready for use. listen to the warning 💀 🏴‍☠️
 
+## Fancy Screenshots
+
+Fresh off the buffer here are some screenshots of the pcb, schematic, and case!
+
+### PCB
+
+![front](https://raw.githubusercontent.com/taciturnaxolotl/quant/main/.github/images/front-traces.webp)
+![back](https://raw.githubusercontent.com/taciturnaxolotl/quant/main/.github/images/back-traces.webp)
+
+### Schematic
+
+![schematic](https://raw.githubusercontent.com/taciturnaxolotl/quant/main/.github/images/schematic.webp)
+
+### Case
+
+Coming soon!
+
 ## Why that License?
 
 Well I like using the AGPL 3.0 license because it's a strong copyleft license that ensures that any changes made to the code are shared back with the community. However there is often alot of confusion about how the license works. Here are 3 brief cases showing how the AGPL 3.0 license works:
