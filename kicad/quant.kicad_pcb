@@ -1,7 +1,7 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.6)
 		(legacy_teardrops no)
@@ -9,41 +9,42 @@
 	(paper "A4")
 	(layers
 		(0 "F.Cu" signal)
-		(31 "B.Cu" signal)
-		(32 "B.Adhes" user "B.Adhesive")
-		(33 "F.Adhes" user "F.Adhesive")
-		(34 "B.Paste" user)
-		(35 "F.Paste" user)
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(40 "Dwgs.User" user "User.Drawings")
-		(41 "Cmts.User" user "User.Comments")
-		(42 "Eco1.User" user "User.Eco1")
-		(43 "Eco2.User" user "User.Eco2")
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(48 "B.Fab" user)
-		(49 "F.Fab" user)
-		(50 "User.1" user)
-		(51 "User.2" user)
-		(52 "User.3" user)
-		(53 "User.4" user)
-		(54 "User.5" user)
-		(55 "User.6" user)
-		(56 "User.7" user)
-		(57 "User.8" user)
-		(58 "User.9" user)
+		(2 "B.Cu" signal)
+		(9 "F.Adhes" user "F.Adhesive")
+		(11 "B.Adhes" user "B.Adhesive")
+		(13 "F.Paste" user)
+		(15 "B.Paste" user)
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(17 "Dwgs.User" user "User.Drawings")
+		(19 "Cmts.User" user "User.Comments")
+		(21 "Eco1.User" user "User.Eco1")
+		(23 "Eco2.User" user "User.Eco2")
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
+		(33 "B.Fab" user)
+		(39 "User.1" user)
+		(41 "User.2" user)
+		(43 "User.3" user)
+		(45 "User.4" user)
+		(47 "User.5" user)
+		(49 "User.6" user)
+		(51 "User.7" user)
+		(53 "User.8" user)
+		(55 "User.9" user)
 	)
 	(setup
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -53,7 +54,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 4)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -61,16 +61,20 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference yes)
-			(plotvalue yes)
-			(plotfptext yes)
+			(plot_black_and_white yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
@@ -123,19 +127,6 @@
 			(effects
 				(font
 					(size 0.8 0.8)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "699b869f-1005-42d0-8644-c728573213fb")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -297,7 +288,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "c251c50d-1a34-4701-96f1-5ed11b432e6b")
 		)
@@ -305,14 +296,14 @@
 			(at -5 5.15 180)
 			(size 1.5 2)
 			(drill oval 1.5 2)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "c1966bb3-3647-40dd-9df4-a21fcbf17c9b")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0 180)
 			(size 5 5)
 			(drill 5.1)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "1a3f7e50-59ea-4d8d-83bf-941fb85b0190")
 		)
 		(pad "1" thru_hole circle
@@ -337,6 +328,7 @@
 			(pintype "passive")
 			(uuid "56175d30-bcde-4250-bf72-35dfa6d1ec38")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
 		(layer "F.Cu")
@@ -360,19 +352,6 @@
 			(effects
 				(font
 					(size 0.8 0.8)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "66ae384f-4749-42dd-b72d-680253fafd28")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -534,7 +513,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "6cdae476-5ce6-431b-b23a-149dfd85fec5")
 		)
@@ -542,14 +521,14 @@
 			(at -5 5.15 180)
 			(size 1.5 2)
 			(drill oval 1.5 2)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "bb79da62-2a30-4419-85ca-c58e536dcb24")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0 180)
 			(size 5 5)
 			(drill 5.1)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "6ef76f8d-0177-4593-af28-1ab4da92ebc8")
 		)
 		(pad "1" thru_hole circle
@@ -574,6 +553,7 @@
 			(pintype "passive")
 			(uuid "c4dc7b7b-9468-4bfb-bd02-dd6b6b77680a")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Seeed Studio XIAO Series Library:XIAO-RP2040-DIP"
 		(layer "F.Cu")
@@ -601,19 +581,6 @@
 				(font
 					(size 0.635 0.635)
 					(thickness 0.1016)
-				)
-			)
-		)
-		(property "Footprint" "Seeed Studio XIAO Series Library:XIAO-RP2040-DIP"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5e04f9dc-aacb-4b51-a621-26804665fdba")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
 				)
 			)
 		)
@@ -800,7 +767,7 @@
 				(width 0.5)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "51174043-9d40-449c-bb76-2127ac08e565")
 		)
@@ -811,7 +778,7 @@
 				(width 0.5)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.SilkS")
 			(uuid "a96789d4-90bf-489c-b1bb-1d81d45cc022")
 		)
@@ -822,7 +789,7 @@
 				(width 0.05)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.CrtYd")
 			(uuid "9cfc5ff6-b0da-483d-91c6-2f9a773720a3")
 		)
@@ -833,7 +800,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "8fbc70af-b8f2-4461-880a-876c24ce52e9")
 		)
@@ -844,7 +811,7 @@
 				(width 0.5)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Fab")
 			(uuid "a98f8049-5ac5-464f-99aa-be8f79501ee6")
 		)
@@ -1156,6 +1123,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "75fce7c9-b940-4815-bce0-90a5c750c7af")
 		)
+		(embedded_fonts no)
 		(model "${AMZPATH}/3dmodels/AMz3D.3dshapes/XIAO-nRF52840 v15.step"
 			(hide yes)
 			(offset
@@ -1241,19 +1209,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "df73cafb-b4ff-4074-8c72-67f5cdde8138")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1436,7 +1391,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "ce21927e-9e88-4a2d-a03e-f61425c1029c")
 		)
@@ -1454,7 +1409,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 17 "Net-(D3-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -1463,7 +1418,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 21 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -1472,7 +1427,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 16 "unconnected-(D3-DIN-Pad3)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -1481,12 +1436,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "3efb06e0-1086-46cc-adab-ba0e4e01aef4")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1524,19 +1480,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 180)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8dcac02a-4be7-4dc2-9708-f789d3b81d5c")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1719,7 +1662,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "6a2ff501-9e54-4b44-bf36-48f303d36ca3")
 		)
@@ -1737,7 +1680,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 15 "Net-(D2-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -1746,7 +1689,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 21 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -1755,7 +1698,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "Net-(D1-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -1764,12 +1707,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875 180)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "30513f41-19b6-4074-a550-0b09f8b0cb09")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -1807,19 +1751,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "338f9fb4-d1c4-4d97-8501-dc0010e4230c")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2002,7 +1933,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "8ffe4a28-3a80-484d-bed8-e056c8f85177")
 		)
@@ -2020,7 +1951,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 19 "Net-(D5-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -2029,7 +1960,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 21 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -2038,7 +1969,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 17 "Net-(D3-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -2047,12 +1978,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "46c61462-ba16-4f78-99cf-979a9ec6dc2d")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -2087,19 +2019,6 @@
 			(effects
 				(font
 					(size 0.8 0.8)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "76989aec-397f-4e99-b5b7-c28b7a629f78")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2261,7 +2180,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "93ca9249-dc2e-4c9b-b406-ec23cb27d208")
 		)
@@ -2269,14 +2188,14 @@
 			(at -5 5.15 180)
 			(size 1.5 2)
 			(drill oval 1.5 2)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "b0d3c4fd-6ceb-4674-a3fa-5b1b57d5c448")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0 180)
 			(size 5 5)
 			(drill 5.1)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "14d3f1fe-885e-45c0-a923-2790db9c3c1c")
 		)
 		(pad "1" thru_hole circle
@@ -2301,6 +2220,7 @@
 			(pintype "passive")
 			(uuid "23c817fe-a4d2-446b-aae3-4e4afe066ab9")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
 		(layer "F.Cu")
@@ -2324,19 +2244,6 @@
 			(effects
 				(font
 					(size 0.8 0.8)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "00e25dbb-a0cd-45a7-b5f7-29c43a0e8845")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2498,7 +2405,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "00d3ec30-2857-4068-a404-7323ceec7418")
 		)
@@ -2506,14 +2413,14 @@
 			(at -5 5.15 180)
 			(size 1.5 2)
 			(drill oval 1.5 2)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "6e2dd601-5cbf-416e-a56c-73fa87a764f2")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0 180)
 			(size 5 5)
 			(drill 5.1)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "c67b7632-ff93-48c4-bfce-6f4dfb0d3d26")
 		)
 		(pad "1" thru_hole circle
@@ -2538,6 +2445,7 @@
 			(pintype "passive")
 			(uuid "d2ea3e49-54f6-4b8c-8d5f-e515ee4073e2")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
 		(layer "F.Cu")
@@ -2561,19 +2469,6 @@
 			(effects
 				(font
 					(size 0.8 0.8)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6ca48942-a280-4310-8938-6ab60f5ab439")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2735,7 +2630,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "ab17739b-4c30-41f2-8c3c-b888b80fc3d8")
 		)
@@ -2743,14 +2638,14 @@
 			(at -5 5.15 180)
 			(size 1.5 2)
 			(drill oval 1.5 2)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "9be9001c-2d6a-4f66-abf3-3f8b027584a4")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0 180)
 			(size 5 5)
 			(drill 5.1)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "248335e1-b7ad-4300-a38f-1a22ea9e5e4a")
 		)
 		(pad "1" thru_hole circle
@@ -2775,6 +2670,7 @@
 			(pintype "passive")
 			(uuid "33314db9-241f-4bf3-ac4f-45744ce0c81c")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 		(layer "F.Cu")
@@ -2801,19 +2697,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "901d0af0-c4a5-4bc4-b080-411822b47a65")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -2996,7 +2879,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "db0f3469-8d33-4f1b-9f54-64dcc9d58998")
 		)
@@ -3014,7 +2897,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 18 "unconnected-(D4-DOUT-Pad1)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -3023,7 +2906,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 21 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -3032,7 +2915,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 15 "Net-(D2-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -3041,12 +2924,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "96cb6c5d-afe3-4218-b7f0-f317a9bfa6cf")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -3081,19 +2965,6 @@
 			(effects
 				(font
 					(size 0.8 0.8)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "34093d39-b44c-4713-b488-0a93f00cd506")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3255,7 +3126,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "9b13b67b-53de-4155-b4f4-182e7dd89e89")
 		)
@@ -3263,14 +3134,14 @@
 			(at -5 5.15 180)
 			(size 1.5 2)
 			(drill oval 1.5 2)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "e3fed5c5-ba4f-4cd6-80f3-79490b650249")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0 180)
 			(size 5 5)
 			(drill 5.1)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "c1090859-2932-4e59-a7a3-568423a155b5")
 		)
 		(pad "1" thru_hole circle
@@ -3295,6 +3166,7 @@
 			(pintype "passive")
 			(uuid "2c33666e-354c-4af7-b2e8-29d53fd1cc64")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
 		(layer "F.Cu")
@@ -3318,19 +3190,6 @@
 			(effects
 				(font
 					(size 0.8 0.8)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0e7e4d0a-abf4-44c6-bfcc-3c025cd5a36d")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3492,7 +3351,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "776c6f0f-394e-4e0a-96d8-19309011cb34")
 		)
@@ -3500,14 +3359,14 @@
 			(at -5 5.15 180)
 			(size 1.5 2)
 			(drill oval 1.5 2)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "ffca45e9-171b-427d-a6db-6e0c494ec35f")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0 180)
 			(size 5 5)
 			(drill 5.1)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "39160c1d-d723-41eb-9900-c1916e8c3cdd")
 		)
 		(pad "1" thru_hole circle
@@ -3532,6 +3391,7 @@
 			(pintype "passive")
 			(uuid "2bacc026-2a42-4fb3-b50f-a0058806ef94")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
 		(layer "F.Cu")
@@ -3555,19 +3415,6 @@
 			(effects
 				(font
 					(size 0.8 0.8)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2fe62559-013f-4e2d-9d64-8b7059fdb647")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3729,7 +3576,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "13977e5c-132f-4644-a359-3768c205b6e1")
 		)
@@ -3737,14 +3584,14 @@
 			(at -5 5.15 180)
 			(size 1.5 2)
 			(drill oval 1.5 2)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "5e33c503-cbcf-4f7a-a706-500d0c6aeb30")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0 180)
 			(size 5 5)
 			(drill 5.1)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "3df1a49e-fe76-4005-95df-40f99be91832")
 		)
 		(pad "1" thru_hole circle
@@ -3769,6 +3616,7 @@
 			(pintype "passive")
 			(uuid "7fce432e-a521-443a-917d-f0479e8c5d12")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
 		(layer "F.Cu")
@@ -3795,19 +3643,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6f2b91b9-e805-4610-b02a-a2f8af1df6a8")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -3990,7 +3825,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "e53137c0-c494-4bb1-8a7d-3273820549da")
 		)
@@ -4008,7 +3843,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 1 "Net-(D1-DOUT)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -4017,7 +3852,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 21 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -4026,7 +3861,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 3 "Net-(D1-DIN)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -4035,12 +3870,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "a6f37b62-7a9c-42e5-8eec-ddef95104f67")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4078,19 +3914,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "85b951e8-e7fd-4492-b293-a1bb863b0d47")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4273,7 +4096,7 @@
 				(width 0.1)
 				(type solid)
 			)
-			(fill none)
+			(fill no)
 			(layer "F.Fab")
 			(uuid "89b33c4d-6456-4d87-9600-ba374a5aade6")
 		)
@@ -4291,7 +4114,7 @@
 		(pad "1" smd rect
 			(at -1.75 -0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 20 "unconnected-(D6-DOUT-Pad1)")
 			(pinfunction "DOUT")
 			(pintype "output")
@@ -4300,7 +4123,7 @@
 		(pad "2" smd rect
 			(at -1.75 0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 21 "GND")
 			(pinfunction "VSS")
 			(pintype "power_in")
@@ -4309,7 +4132,7 @@
 		(pad "3" smd rect
 			(at 1.75 0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 19 "Net-(D5-DOUT)")
 			(pinfunction "DIN")
 			(pintype "input")
@@ -4318,12 +4141,13 @@
 		(pad "4" smd rect
 			(at 1.75 -0.875)
 			(size 1.6 0.85)
-			(layers "F.Cu" "F.Paste" "F.Mask")
+			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net 2 "+5V")
 			(pinfunction "VDD")
 			(pintype "power_in")
 			(uuid "ec9523a9-6d37-4fda-9cd9-131987601aad")
 		)
+		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm.wrl"
 			(offset
 				(xyz 0 0 0)
@@ -4358,19 +4182,6 @@
 			(effects
 				(font
 					(size 0.8 0.8)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "Kailh_PG1353_Solderable:Kailh-PG1353-Solderable-1U"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "25d2125e-76be-47c4-9fac-d07e3f250f26")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -4532,7 +4343,7 @@
 				(width 0.1)
 				(type default)
 			)
-			(fill none)
+			(fill no)
 			(layer "Cmts.User")
 			(uuid "b9aabb44-4ab2-48ad-8e65-40a9738d7906")
 		)
@@ -4540,14 +4351,14 @@
 			(at -5 5.15 180)
 			(size 1.5 2)
 			(drill oval 1.5 2)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "c17492ca-be62-4fc5-9f16-fbaadba0dc37")
 		)
 		(pad "" np_thru_hole circle
 			(at 0 0 180)
 			(size 5 5)
 			(drill 5.1)
-			(layers "F&B.Cu" "*.Mask")
+			(layers "*.Cu" "*.Mask")
 			(uuid "95b8604f-130d-4059-ab2c-8e88e42e424d")
 		)
 		(pad "1" thru_hole circle
@@ -4572,6 +4383,7 @@
 			(pintype "passive")
 			(uuid "7bbd39a8-7594-417c-893d-58eddbe180d6")
 		)
+		(embedded_fonts no)
 	)
 	(gr_arc
 		(start 94 116.2)
@@ -4657,18 +4469,6 @@
 		(layer "Edge.Cuts")
 		(uuid "fff6c2a8-930d-43b2-aba2-c8d194f7f189")
 	)
-	(gr_text "WAYWAYWAY"
-		(at 91.08 40.56 0)
-		(layer "B.SilkS")
-		(uuid "f246a9bc-a166-4c08-90be-747a3147e55e")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom mirror)
-		)
-	)
 	(gr_text "the quant-pad"
 		(at 63.44 41.13 0)
 		(layer "F.SilkS")
@@ -4691,6 +4491,18 @@
 				(thickness 0.1)
 			)
 			(justify left bottom)
+		)
+	)
+	(gr_text "WAYWAYWAY"
+		(at 91.08 40.56 0)
+		(layer "B.SilkS")
+		(uuid "f246a9bc-a166-4c08-90be-747a3147e55e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
 		)
 	)
 	(segment
@@ -7258,4 +7070,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )
